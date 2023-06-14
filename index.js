@@ -13,6 +13,7 @@ function makeUuid() {
 function createFakePost() {
   return {
     id: makeUuid(),
+    title: faker.lorem.sentence(),
     text: faker.lorem.paragraph(),
     image: faker.image.image(),
     likes: faker.datatype.number(100),
